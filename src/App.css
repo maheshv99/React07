@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(228, 127, 93) 1%, rgb(207, 246, 141) 50% , rgb(239, 167, 115));
+}
+
+#Navbar{
+  background-color: rgb(85, 13, 119);
+  padding: 5px;
+  margin-bottom: 3rem;
+  font-family: monostrate;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.title{
   color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.title:hover{
+  color: white;
+  text-shadow: 1px 1px 5px rgb(0, 38, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.active{
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text{
+  margin-left: 5rem;
+  font-size: 1.3rem;
+}
+
+.header{
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  grid-gap: 15vh;
+  justify-content: space-between;
+}
+
+h2{
+  font-family: 'Secular One', sans-serif;
+}
+
+.butn{
+  font-size: 1.3rem;
+  padding: 0 2rem;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+td{
+  padding: 15px !important;
+}
+
+.algn{
+  text-align: right;
+}
+
+.box{
+  width: 65vw;
+  margin: 20vh 6vw 10vh;
+}
+
+.editFields{
+  width: 25vw;
+  height: 6vh;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+.editFields:hover{
+  border: 2px solid black;
+}
+
+
+.box2{
+  width: 85vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.butn2{
+  font-size: 1.3rem;
+  padding: 0.5rem 4rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-left: 2vw;
+}
+.unline{
+  text-decoration: none;
 }
